@@ -1,0 +1,32 @@
+$primary:#08164E;
+$secondary:#D8790D;
+$border-color:#D8612E;
+$darkblue:#193369;
+$lightblue:#F0F5FB;
+$red:#D60004;
+$red-hover:#C50105;
+$green:#5B7E15;
+$blue:#004B8F;
+$black:#000;
+$white:#ffffff;
+$gray:#504D49;
+$lightgray:#F5F5F5;
+$primary-font: 'Inter',
+sans-serif;
+$secondary-font:'DM Sans',
+sans-serif;
+$shadow:0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+// color paltte - 
+$colors:( "primary":$primary, "secondary":$secondary, "green":#008943, "black":#000, "lightgray":#F5F5F5);
+.test-btn {
+    background-color: map-get($colors, "blue");
+}
+
+@mixin fancy-border($size:1px, $color:#000) {
+    border: $size solid $color;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

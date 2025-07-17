@@ -456,14 +456,6 @@
     .general-tabs .nav-tabs {
         flex-wrap: nowrap;
     }
-    .wp-block-media-text.alignfull {}
-    .logged-in .main_header {
-        top: 32px;
-    }
-    .main_header .navbar-nav>li:last-child>.dropdown-menu {
-        left: auto;
-        right: -20px;
-    }
 }
 
 @media (min-width:992px) {}
@@ -491,10 +483,6 @@
                 word-wrap: break-word;
             }
         }
-    }
-    .main_header {}
-    .fixed_btns {
-        display: none;
     }
     .alert-area {
         top: 75px;
@@ -693,13 +681,6 @@
 }
 
 @media (max-width:1300px) {}
-
-@media (max-width:1250px) and (min-width:1200px) {
-    .main_header .navbar-nav>li>a {
-        font-size: 17px;
-        padding: 10px 16px 18px 16px !important;
-    }
-}
 
 @media (max-width:767px) and (min-width:480px) {
     #sbi_images {

@@ -437,13 +437,6 @@
   .general-tabs .nav-tabs {
     flex-wrap: nowrap;
   }
-  .logged-in .main_header {
-    top: 32px;
-  }
-  .main_header .navbar-nav > li:last-child > .dropdown-menu {
-    left: auto;
-    right: -20px;
-  }
 }
 @media (max-width: 1199.9px) {
   .logged-in .main_header {
@@ -460,9 +453,6 @@
   .main_content ul li a,
   .main_content ol li a {
     word-wrap: break-word;
-  }
-  .fixed_btns {
-    display: none;
   }
   .alert-area {
     top: 75px;
@@ -641,12 +631,6 @@
   }
   .gform-admin .gform-flyout.gform-flyout--right {
     right: 70px;
-  }
-}
-@media (max-width: 1250px) and (min-width: 1200px) {
-  .main_header .navbar-nav > li > a {
-    font-size: 17px;
-    padding: 10px 16px 18px 16px !important;
   }
 }
 @media (max-width: 767px) and (min-width: 480px) {

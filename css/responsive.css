@@ -63,17 +63,8 @@
   .newsimg img {
     height: auto;
   }
-  .main_search_content .search_box .asp_main_container {
-    width: 100%;
-  }
-  .sort_boxResult {
-    margin-left: 0;
-  }
   .back_next_posts .prev_link {
     position: static;
-  }
-  .main_search_content .search_box .probox {
-    min-width: 100%;
   }
   .signup_alerts_news form {
     display: block;
@@ -132,9 +123,6 @@
   .resultWraper .searchFilterBlock {
     padding-top: 0;
   }
-  .filterBlocks {
-    padding-top: 20px;
-  }
   .more-detail {
     display: block;
   }
@@ -143,18 +131,6 @@
   }
   .main_breadcrumb .container {
     padding-left: 15px;
-  }
-  .main_search_content {
-    flex-wrap: wrap;
-  }
-  .main_search_content .h6 {
-    margin-right: 0;
-    margin-bottom: 10px;
-    width: 100%;
-    text-align: center;
-  }
-  .main_search_content .form-control {
-    min-width: 100%;
   }
   .text-img-wrap.no-img .btn_sm {
     position: static;
@@ -190,13 +166,6 @@
     margin-bottom: 0px;
   }
   .news_wraper .newsRow .newsColumn {
-    width: 100%;
-  }
-  .main_search_content h3 {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-  .main_search_content .search_input {
     width: 100%;
   }
 }

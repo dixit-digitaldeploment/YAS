@@ -17,6 +17,10 @@
     background: $black;
 }
 
+.lightgray {
+    background-color: #F5F5F5;
+}
+
 .generic_middle_block {
     max-width: 900px;
     margin-left: auto;
@@ -114,7 +118,9 @@
     .breadcrumb-item+.breadcrumb-item {
         padding-left: 3px;
     }
-    .container {}
+    .container {
+        max-width: 1370px;
+    }
 }
 
 .page_title {

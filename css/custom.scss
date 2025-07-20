@@ -633,7 +633,7 @@
     }
 }
 
-//News page
+// ===== News start =====
 .news_wraper {
     .container {
         max-width: 1230px;
@@ -642,6 +642,7 @@
 
 .newsArea {
     padding: 40px 0px;
+    background: #F5F5F5;
 }
 
 .news_category {
@@ -673,7 +674,7 @@
     .newsColumn {
         width: 25%;
         padding: 0px 12px;
-        margin-bottom: 15px;
+        margin-bottom: 24px;
         display: flex;
         flex-direction: column;
         &.no-img {
@@ -713,6 +714,7 @@ p.date {
     position: relative;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
     h3 {
         font-size: 18px;
         color: $black;
@@ -772,7 +774,7 @@ p.date {
 }
 
 .newsSearchEra {
-    padding-top: 00px;
+    padding-top: 40px;
     padding-bottom: 40px;
     .top-title {
         margin-bottom: 20px;
@@ -792,17 +794,20 @@ p.date {
 
 .search_filter_title {
     .search-box {
-        max-width: 300px;
+        max-width: 230px;
         @include md {
             max-width: 100%;
+        }
+        .form-control {
+            border-radius: 5px;
         }
     }
     .filterwrap {
         form {
             display: grid;
-            grid-template-columns: 300px 250px 250px;
+            grid-template-columns: 230px 230px 230px;
             align-items: end;
-            grid-column-gap: 15px;
+            grid-column-gap: 10px;
             @include md {
                 grid-template-columns: auto;
             }
@@ -817,6 +822,14 @@ p.date {
             }
         }
     }
+    @include md {
+        flex-wrap: wrap;
+        .filter_box {
+            margin-left: 0 !important;
+            margin-top: 10px;
+            width: 100% !important;
+        }
+    }
 }
 
 .newsInRow {
@@ -828,7 +841,7 @@ p.date {
     flex-direction: column;
     justify-content: flex-end;
     .newsSort {
-        width: 280px;
+        width: 230px;
         margin-left: auto;
         margin-bottom: 0px;
         @include md {
@@ -837,19 +850,53 @@ p.date {
     }
 }
 
-//News Details
-.news_detail {
-    padding-bottom: 50px;
-    padding-top: 50px;
-    .page_title {
-        padding-bottom: 30px;
+@media (max-width: 767px) {
+    .newsRow .newsColumn,
+    .news-grid .newsColumn {
+        width: 100%;
     }
+    .newsSort {
+        margin-left: 0px !important;
+        margin-top: 10px;
+        max-width: 100% !important;
+        width: 100% !important;
+        margin-bottom: 0px;
+    }
+    .news_wraper .newsRow .newsColumn {
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .nsRight .newsSort {
+        width: 200px;
+    }
+    .filterWrap form {
+        max-width: 100%;
+        grid-template-columns: 1fr 160px 130px;
+    }
+    .search_filter_title .filter_box {
+        margin-right: 4px !important;
+    }
+    .news_wraper .newsRow .newsColumn {
+        width: 33.3%;
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+
+// ===== News End =====
+// ===== News Detail starts =====
+.news_detail {
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background: #FCFEFF;
+    .page_title {}
     .container {
-        max-width: 830px;
+        max-width: 930px;
     }
     .news-dt-img {
-        margin-bottom: 20px;
-        padding-top: 10px;
+        margin-bottom: 50px;
         img {
             width: 100%;
             object-fit: cover;
@@ -870,6 +917,10 @@ p.date {
         flex-direction: column;
     }
     h2 {}
+    .share_news {
+        border-top: 1px solid #525151;
+        padding-top: 20px;
+    }
     .news-dt-soc {
         display: flex;
         align-items: center;
@@ -886,6 +937,8 @@ p.date {
     }
 }
 
+// ===== News details End =====
+// ===== Content tempalte starts =====
 //General fix with page builder
 .aligncenter {
     .row {

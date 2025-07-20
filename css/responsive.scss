@@ -110,9 +110,6 @@
     .news_wraper .search_filter_title .filterWrap {
         grid-template-columns: auto;
     }
-    .filter_box.col-two label {
-        display: none;
-    }
     .artist_detail .artist_info {
         padding-right: 0;
     }
@@ -138,14 +135,6 @@
     .text-img-wrap.no-img .btn_sm {
         position: static;
     }
-    .search_filter_title {
-        flex-wrap: wrap;
-    }
-    .search_filter_title .filter_box {
-        margin-left: 0 !important;
-        margin-top: 10px;
-        width: 100% !important;
-    }
     .search_box {
         width: 100%;
         max-width: 100% !important;
@@ -156,36 +145,6 @@
     .main_wrapper .main_breadcrumb .breadcrumb {
         padding-left: 20px;
         padding-right: 20px;
-    }
-    .newsRow .newsColumn,
-    .news-grid .newsColumn {
-        width: 100%;
-    }
-    .newsSort {
-        margin-left: 0px !important;
-        margin-top: 10px;
-        max-width: 100% !important;
-        width: 100% !important;
-        margin-bottom: 0px;
-    }
-    .news_wraper .newsRow .newsColumn {
-        width: 100%;
-    }
-}
-
-@media (min-width:768px) and (max-width:1024px) {
-    .nsRight .newsSort {
-        width: 200px;
-    }
-    .filterWrap form {
-        max-width: 100%;
-        grid-template-columns: 1fr 160px 130px;
-    }
-    .search_filter_title .filter_box {
-        margin-right: 4px !important;
-    }
-    .news_wraper .newsRow .newsColumn {
-        width: 33.3%;
     }
 }
 

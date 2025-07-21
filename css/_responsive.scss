@@ -5,27 +5,6 @@
     .wp-block-table .has-fixed-layout {
         min-width: 500px;
     }
-    .tribe-events-c-events-bar__search-container {
-        display: block !important;
-        position: static !important;
-        width: 100% !important;
-    }
-    .tribe-events .tribe-events-c-events-bar__search-container {
-        padding: 0px !important;
-    }
-    .tribe-events-c-events-bar__search-button,
-    .tribe-events.tribe-common .tribe-events-header__events-bar.tribe-events-c-events-bar .tribe-events-c-events-bar__filter-button-container {
-        display: none !important;
-    }
-    .tribe-filter-bar {
-        display: block !important;
-        position: static !important;
-        width: 100% !important;
-        padding: 0px !important;
-    }
-    .tribe-events .tribe-events-header__events-bar {
-        width: 100%;
-    }
     .meeting-wraper .filterWrap-meet {
         grid-template-columns: auto;
     }
@@ -149,10 +128,6 @@
     }
 }
 
-@media (min-width:992px) {}
-
-@media (max-width:992px) {}
-
 @media (max-width:1199.9px) {
     .logged-in {
         .main_header {
@@ -179,49 +154,10 @@
         top: 75px;
         z-index: 90;
     }
-    .soc_nav_wrap {
-        background: $lightgray;
-        padding: 25px;
-        display: flex;
-        flex-direction: column;
-    }
-    .alert-bar {
-        /* top: 75px;*/
-    }
-}
-
-@media (min-width:1024px) {
-    .wp-adminify.toplevel_page_gf_edit_forms #gform-form-toolbar {
-        width: calc(100% - 290px);
-    }
-    .gform-admin .gform-flyout.gform-flyout--right {
-        right: 70px;
-    }
-}
-
-@media (max-width:1300px) {}
-
-@media (max-width:767px) and (min-width:480px) {
-    #sbi_images {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-}
-
-@media (min-width:1300px) {
-    .meeting-wraper .expanding-grid .expand_img img {
-        height: 310px;
-        object-fit: cover;
-    }
 }
 
 @media (min-width:768px) {
     .show_mobile {
         display: none;
-    }
-}
-
-@media (max-width:768px) {
-    .tribe-events-calendar-list__event-wrapper .tribe-events-calendar-list__event-featured-image-wrapper {
-        display: none !important;
     }
 }

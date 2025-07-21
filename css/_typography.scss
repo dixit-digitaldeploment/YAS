@@ -94,6 +94,11 @@ p.has-large-font-size {
     line-height: 36px;
 }
 
+p+ul,
+p+ol {
+    margin-top: -15px;
+}
+
 a {
     color: #005598;
     font-weight: 600;

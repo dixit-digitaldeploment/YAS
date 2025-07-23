@@ -962,6 +962,15 @@ label.title {
     right: -20px;
   }
 }
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .main_header .navbar-brand img {
+    max-width: 250px;
+  }
+  .main_header .navbar-nav > li > a {
+    font-size: 16px;
+    padding: 10px 11px 10px 11px !important;
+  }
+}
 .main_banner {
   padding-top: 162px;
   position: relative;
@@ -1162,6 +1171,7 @@ label.title {
   font-size: 24px;
   font-weight: 700;
   color: #ffffff;
+  font-family: "Inter", sans-serif;
 }
 .banner-buttons .btn_card p {
   color: #ffffff;
@@ -1423,7 +1433,7 @@ label.title {
   font-weight: 800;
   color: #fff;
   margin-bottom: 0px;
-  font-family: "DM Sans", sans-serif;
+  font-family: "Inter", sans-serif;
   text-decoration: none;
 }
 .nav_section .navcol .navBlock_col .navblock_icon {
@@ -1555,6 +1565,7 @@ label.title {
   color: #555554;
   display: block;
   margin-bottom: 5px;
+  font-weight: 700;
 }
 .up_events .evt_card:hover h3 {
   color: #14213f;
@@ -2052,7 +2063,7 @@ p.date {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
 }
 .news_content h3 {
-  font-size: 18px;
+  font-size: 21px;
   color: #000;
 }
 .news_content > a {

@@ -554,27 +554,23 @@ label.title {
   .main_header .navbar-nav > li:hover .megamenu {
     display: block;
   }
-  .main_header .navbar-nav > li .dropdown-menu,
-  .main_header .navbar-nav > li .megamenu {
-    margin-top: -5px;
-  }
 }
 .main_header .navbar-nav > li:hover > a {
   color: #08164E !important;
   background: #ffffff;
 }
 .main_header .navbar-nav .dropdown-menu {
-  width: 265px;
+  width: 325px;
   border-radius: 0px;
-  padding: 16px 24px;
+  padding: 24px 16px 16px 16px;
   text-align: left;
   margin-top: 0;
   left: 50%;
   transform: translateX(-50%);
   background: #FFF;
-  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-top: 3px solid #D8612E;
   top: 100%;
-  border: 0;
   padding-top: 5px;
   border-radius: 0;
   padding-bottom: 15px;
@@ -583,17 +579,22 @@ label.title {
 .main_header .navbar-nav .dropdown-menu > li {
   margin-bottom: 0px;
   position: relative;
+  border-bottom: 2px solid #D8612E;
 }
 .main_header .navbar-nav .dropdown-menu > li > a {
   color: #000;
   text-align: left;
   display: block;
-  padding: 3px 0px;
+  padding: 12px 0px;
   font-size: 18px;
-  font-weight: normal;
+  font-weight: 700;
 }
 .main_header .navbar-nav .dropdown-menu > li > a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: #D8612E;
+}
+.main_header .navbar-nav .dropdown-menu > li:last-child {
+  border-bottom: none;
 }
 .main_header .navbar-nav .dropdown-menu a {
   white-space: normal;
@@ -3158,6 +3159,43 @@ p.date {
   display: none;
 }
 
+.contact_wraper .contact_card_section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.contact_wraper .contact_form {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.icon_grid_wrap .icon_grid {
+  display: grid;
+  grid-template-columns: 30px auto;
+}
+
+.career_wrap .fd_row {
+  margin-bottom: 50px;
+}
+.career_wrap .form-group {
+  max-width: 232px;
+}
+.career_wrap .fd_content form {
+  padding-top: 15px;
+}
+.career_wrap .fd_accordion {
+  padding-bottom: 40px;
+}
+
+.simple-two-col {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .simple-two-col .col_left {
+    padding-right: 50px;
+  }
+}
+
 .gray,
 .grey {
   background-color: #08164E;
@@ -3954,6 +3992,7 @@ h2 + .expand_img_grid {
   box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
   border: 0;
   height: 100%;
+  border-radius: 10px;
 }
 .contact_box p {
   margin-bottom: 5px;

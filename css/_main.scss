@@ -1813,3 +1813,50 @@ p.date {
         display: none;
     }
 }
+
+//Conatct page
+.contact_wraper {
+    .contact_card_section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .contact_form {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.icon_grid_wrap {
+    .icon_grid {
+        display: grid;
+        grid-template-columns: 30px auto;
+    }
+}
+
+//Find a career
+.career_wrap {
+    .fd_row {
+        margin-bottom: 50px;
+    }
+    .form-group {
+        max-width: 232px;
+    }
+    .fd_content {
+        form {
+            padding-top: 15px;
+        }
+    }
+    .fd_accordion {
+        padding-bottom: 40px;
+    }
+}
+
+.simple-two-col {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include desk {
+        .col_left {
+            padding-right: 50px;
+        }
+    }
+}

@@ -360,3 +360,34 @@ $(".kb-table").each(function() {
         $table.prepend($thead); // Insert thead before tbody
     }
 });
+
+function setHeroHeight() {
+    var headerHeight = jQuery("header").outerHeight();
+    var alertbar = jQuery(".alert-area").is(":visible")
+      ? jQuery(".alert-area").outerHeight()
+      : 0;
+    jQuery(".main_wrapper, .main_banner").css("padding-top", headerHeight + "px");
+    if (jQuery("#wpadminbar").length) {
+      jQuery(".alert-area").css("top", headerHeight + 30 + "px");
+      jQuery(".kt-tabs-title-list").css(
+        "top",
+        headerHeight + alertbar + 30 + "px"
+      );
+    } else {
+      jQuery(".alert-area").css("top", headerHeight + "px");
+      jQuery(".kt-tabs-title-list").css("top", headerHeight + alertbar + "px");
+    }
+  }
+  
+//   Initial run
+  setHeroHeight();
+  
+//   Observe header size changes
+  const header = document.querySelector("header");
+  
+  if (header && "ResizeObserver" in window) {
+    const resizeObserver = new ResizeObserver(() => {
+      setHeroHeight();
+    });
+    resizeObserver.observe(header);
+  }

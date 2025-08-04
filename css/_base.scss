@@ -1,8 +1,9 @@
 //componenets (button, anchor tags, heading tags etc)
 body {
-    color: $black;
+    color: #3A3A3B;
     font-size: 16px;
-    @include secondary-font;
+    background: #FCFEFF;
+    @include primary-font;
     &.wp-admin {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
     }
@@ -29,9 +30,9 @@ h6,
 
 h1,
 .h1 {
-    font-size: 42px;
+    font-size: 40px;
     color: $black;
-    font-weight: 800;
+    font-weight: 500;
     margin-bottom: 16px;
 }
 
@@ -39,7 +40,7 @@ h2,
 .h2 {
     font-size: 32px;
     color: $black;
-    font-weight: 800;
+    font-weight: 500;
     margin-bottom: 16px;
 }
 
@@ -47,29 +48,26 @@ h3,
 .h3 {
     font-size: 24px;
     color: $black;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 h4,
 .h4 {
-    font-size: 21px;
+    font-size: 18px;
     color: $black;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 h5,
 .h5 {
-    font-size: 18px;
+    font-size: 16px;
     color: $black;
-    font-weight: 800;
-    text-transform: none;
+    font-weight: 500;
 }
 
 h6,
 .h6 {
     font-size: 16px;
-    text-transform: none;
-    @include secondary-font;
 }
 
 .h1,
@@ -86,7 +84,7 @@ p {
     font-size: 16px;
     font-weight: normal;
     color: $black;
-    @include secondary-font;
+    @include primary-font;
 }
 
 p.has-large-font-size {
@@ -100,22 +98,19 @@ p+ol {
 }
 
 a {
-    color: #005598;
-    font-weight: 600;
+    color: #1F376A;
+    font-weight: 500;
     &:hover {
-        color: #14213f;
         text-decoration: underline;
         text-decoration-style: solid !important;
     }
 }
 
 p a {
-    color: #005598;
-    font-weight: 600;
-    text-decoration: underline;
-    text-decoration-style: solid !important;
+    color: #1F376A;
+    font-weight: 500;
     &:hover {
-        color: #14213f;
+        text-decoration-style: solid !important;
         text-decoration: underline;
     }
 }
@@ -148,22 +143,23 @@ strong {
 }
 
 .btn_sm {
-    color: #000;
-    padding: 12px 24px;
+    color: #fff;
+    padding: 16px 24px;
     display: inline-block;
     text-align: center;
     position: relative;
-    background: none;
     font-family: $primary-font;
     font-size: 18px;
     text-decoration: none;
-    font-weight: 800;
-    border-bottom: 3px solid $secondary;
-    border-radius: 5px 5px 0px 0px;
+    font-weight: 600;
+    background: $secondary;
+    border: 2px solid $secondary;
+    line-height: 1;
+    // border-radius: 5px 5px 0px 0px;
     &:hover,
     &:focus-within {
-        background: $secondary;
-        color: #000;
+        background: #fff;
+        color: #E85D0F;
         text-decoration: none;
         img {}
     }

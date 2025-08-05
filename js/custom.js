@@ -391,3 +391,14 @@ function setHeroHeight() {
     });
     resizeObserver.observe(header);
   }
+
+
+  $(document).ready(function() {
+    // Attach a click event listener to the element with ID 'backToTopButton'
+    $(".top").on("click", function() {
+        // Animate the scroll of the html and body elements to the top (scrollTop: 0)
+        // The '500' specifies the duration of the animation in milliseconds
+        $("html, body").animate({ scrollTop: 0 }, 1000);
+        return false; // Prevent default link behavior if it's an anchor tag
+    });
+});

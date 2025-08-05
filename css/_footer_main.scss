@@ -101,7 +101,7 @@
             width: 22px;
             fill: #fff;
         }
-        &:hover {
+        &:hover,&:focus-within {
             svg {
                 fill: $secondary;
             }

@@ -63,7 +63,7 @@
     &:hover {
         background: $white !important;
         text-decoration: none !important;
-        color: #E85D0F !important;
+        color: #e85d0f !important;
         opacity: 1 !important;
     }
 }
@@ -122,6 +122,18 @@
     }
     > section {
         padding: 40px 0px;
+    }
+    .two-columns{
+        padding-bottom: 40px;
+    }
+    //sidebar
+    .sidebar {
+        background: var(--Lightest-Gray, #f6f6f7);
+        padding: 32px 64px;
+        p {
+            margin: 0;
+            margin-bottom: 4px;
+        }
     }
 }
 
@@ -196,7 +208,7 @@
         padding-left: 3px;
     }
     .container {
-        max-width: 1370px;
+        // max-width: 1370px;
     }
 }
 
@@ -209,7 +221,7 @@
     padding-bottom: 16px;
     position: relative;
     flex-direction: column;
-    background: #E8EAEA;
+    background: #e8eaea;
     min-height: 120px;
     h1 {
         position: relative;

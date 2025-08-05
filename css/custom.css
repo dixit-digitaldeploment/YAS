@@ -3,7 +3,7 @@ body {
   color: #3A3A3B;
   font-size: 16px;
   background: #FCFEFF;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 body.wp-admin {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -25,7 +25,7 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 h1,
@@ -84,7 +84,7 @@ p {
   font-size: 16px;
   font-weight: normal;
   color: #3A3A3B;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 p.has-large-font-size {
@@ -240,7 +240,7 @@ select.form-control {
 
 label.title {
   font-weight: 700;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 ::-webkit-input-placeholder {
@@ -1715,25 +1715,38 @@ label.title {
   margin-bottom: 40px;
 }
 .no-found-info h1 {
-  font-size: 90px;
-  font-weight: 800;
-  color: #3A3A3B;
-  line-height: 90px;
-  margin-bottom: 24px;
+  color: #3a3a3b;
+  text-align: center;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 112px; /* 112% */
+  text-transform: capitalize;
+  margin: 0;
 }
 .no-found-info h2 {
-  font-size: 24px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
   color: #3A3A3B;
-  font-weight: 700;
-  margin-bottom: 10px;
   text-transform: capitalize;
+  margin-bottom: 8px;
 }
 .no-found-info p {
-  font-weight: 600;
+  max-width: 290px;
+  margin: auto;
+}
+.no-found-info .btn_wrapper {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .no-found-info .btn_sm {
-  min-width: 140px;
-  margin-top: 15px;
+  min-width: 265px;
+  max-width: 265px;
+  margin: auto;
 }
 .no-found-info .search404 {
   margin-top: 30px;
@@ -2692,7 +2705,7 @@ p.date {
   background: #F5F5F5;
   border-radius: 0px;
   min-width: 300px;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   border: 1px solid #3A3A3B;
 }
 .main-tabs .nav-tabs .nav-item a.active {
@@ -2754,7 +2767,7 @@ p.date {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 100px;
   min-width: 100px;
   flex-direction: column;
@@ -2898,7 +2911,7 @@ p.date {
   margin: 0px 5px;
   text-decoration: none !important;
   padding: 2px 4px;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .wp-pagenavi .next.page-numbers,
 .wp-pagenavi .prev.page-numbers,
@@ -3698,7 +3711,7 @@ p.date {
   margin-bottom: 20px;
 }
 .main_wrapper li {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .main_wrapper > section {
   padding: 40px 0px;
@@ -4305,7 +4318,7 @@ h2 + .expand_img_grid {
   border: 0;
   transition: background-color 0.3s ease-in-out;
   box-shadow: none;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .simple_list_col a:hover {
   color: #000;
@@ -4754,7 +4767,7 @@ h2 + .expand_img_grid {
   position: relative;
   font-size: 16px !important;
   font-weight: 700;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .wp-block-advgb-accordions .advgb-accordion-header svg,
 .advgb-accordions-wrapper .advgb-accordion-header svg {
@@ -4883,7 +4896,7 @@ h2 + .expand_img_grid {
   border: 0 !important;
 }
 .advgb-tabs-wrapper ul.advgb-tabs-panel li.advgb-tab a {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #3A3A3B !important;
   text-align: center;
   font-size: 21px;
@@ -5975,7 +5988,7 @@ button.is-pressed .dashicons::before {
   padding-bottom: 10px;
   padding-top: 5px;
   margin-bottom: 0px;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 legend.gform-field-label {
@@ -6337,7 +6350,7 @@ legend.gform-field-label {
   font-size: 16px;
   font-weight: 700;
   color: #1F376A !important;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-decoration: underline;
 }
 .tribe-events.tribe-common .tribe-events-header__events-bar.tribe-events-c-events-bar .tribe-events-c-events-bar__filter-button-container .tribe-events-c-events-bar__filter-button {
@@ -6386,7 +6399,7 @@ legend.gform-field-label {
 .tribe-events .tribe-filter-bar .tribe-filter-bar__form-heading {
   color: #3A3A3B;
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
 }
 .tribe-events .tribe-filter-bar .tribe-filter-bar__filters .tribe-filter-bar-c-filter {

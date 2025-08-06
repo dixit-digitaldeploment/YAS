@@ -123,7 +123,7 @@
     > section {
         padding: 40px 0px;
     }
-    .two-columns{
+    .two-columns {
         padding-bottom: 40px;
     }
     //sidebar
@@ -232,13 +232,17 @@
 }
 
 .wp-block-image {
+    img {
+        border-radius: 50px;
+    }
     figcaption {
-        font-size: 16px;
+        font-size: 14px;
         font-style: normal;
-        font-weight: 400;
-        text-align: center;
-        color: #1c2f5e;
-        padding-top: 10px;
+        font-weight: 300;
+        text-align: left;
+        color: $black;
+        padding: 8px 0;
+        // padding-top: 10px;
     }
 }
 
@@ -277,12 +281,11 @@
 
 .doc_block {
     display: block;
-    color: #005598;
+    color: $primary;
     font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    text-decoration: underline;
-    @include secondary-font;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 12px;
     img {
         margin-right: 8px;
         max-width: 20px;
@@ -292,16 +295,19 @@
         margin-right: 10px;
     }
     &:hover {
-        color: #14213f;
+        // color: #14213f;
         img {
-            filter: brightness(0) saturate(100%) invert(11%) sepia(12%) saturate(4774%) hue-rotate(193deg)
-                brightness(95%) contrast(96%);
+            // filter: brightness(0) saturate(100%) invert(11%) sepia(12%) saturate(4774%) hue-rotate(193deg)
+            //     brightness(95%) contrast(96%);
         }
     }
 }
 
 .topTitle {
-    text-align: center;
+    // text-align: center;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
     margin-bottom: 40px;
 }
 
@@ -320,11 +326,14 @@
         }
     }
     .img_block {
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
         img {
             width: 100%;
-            aspect-ratio: 141/106;
+            aspect-ratio: 3/2;
             object-fit: cover;
-            border-radius: 10px;
+            border-radius: 15px;
         }
         &.no-p-tag {
             &:hover {
@@ -332,21 +341,32 @@
         }
     }
     .img_block_title {
-        padding: 15px;
-        text-align: center;
+        padding: 16px;
+        padding-top: 8px;
+        // text-align: center;
         h3 {
             color: $black;
-            font-size: 21px;
-            font-weight: 700;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
         }
         p {
         }
     }
     .img_btn_col {
         &:hover {
+            .img_block {
+                &::before {
+                    content: "";
+                    background: linear-gradient(0deg, rgba(31, 55, 106, 0.25) 0%, rgba(31, 55, 106, 0.25) 100%);
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
             a {
                 h3 {
-                    color: #14213f;
+                    // color: #14213f;
                 }
             }
         }
@@ -393,9 +413,9 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        border: 0;
-        border-radius: 20px 0px;
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+        overflow: hidden;
         > a {
             display: flex;
             flex-direction: column;
@@ -406,15 +426,18 @@
                 }
             }
         }
-        &:hover {
-        }
+
         &.no-img {
             .btn_sm {
                 position: absolute;
                 bottom: 20px;
             }
         }
+        &:hover {
+            box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.35);
+        }
         > a:hover {
+            // box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.35);
         }
         .img_card_block {
             position: relative;
@@ -423,7 +446,7 @@
             }
         }
         .text_card_block {
-            padding: 10px 16px;
+            padding: 12px 24px 8px;
             height: auto;
             p {
                 margin-bottom: 10px;
@@ -507,7 +530,7 @@ h2 + .expand_img_grid {
         &:hover {
             h3 {
                 text-decoration: underline;
-                color: $bg-blue;
+                // color: $bg-blue;
             }
             .plus-minus_icon {
                 img {
@@ -517,23 +540,27 @@ h2 + .expand_img_grid {
     }
     .expand_det {
         text-align: left;
-        padding: 30px 15px;
-        padding-bottom: 20px;
+        padding: 12px 16px;
+        padding-bottom: 5px;
         display: flex;
         flex-direction: column;
         /*  background: #fff;*/
         h3 {
-            font-size: 21px;
-            font-weight: 700;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            text-align: center;
             margin-bottom: 3px;
             color: $black;
             min-height: 40px;
         }
         .job_title {
-            font-size: 16px;
-            font-weight: 700;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
             color: $black;
-            margin-bottom: 8px;
+            margin-bottom: 0px;
+            text-align: center;
         }
     }
     .links {
@@ -584,8 +611,8 @@ h2 + .expand_img_grid {
         margin-top: -10px;
         box-shadow: none;
         background: $white;
-        border-radius: 10px;
-        box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
     }
     .expanding-container.expanded,
     .expanding-grid .expanding-container:target {
@@ -622,12 +649,13 @@ h2 + .expand_img_grid {
         }
     }
     .expand-content {
-        padding: 40px 30px;
+        padding: 48px 30px;
         margin: 0 auto;
         max-width: 960px;
         p {
             a {
-                font-weight: 600;
+                font-weight: 300;
+                color: $black;
             }
         }
         @include md {
@@ -691,13 +719,14 @@ h2 + .expand_img_grid {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+        border-radius: 50px;
     }
     .owl-nav {
         button {
-            width: 46px;
-            height: 50px;
-            border-radius: 0px 5px 5px 0px;
-            background: rgba(255, 255, 255, 0.5);
+            // width: 46px;
+            // height: 50px;
+            // border-radius: 0px 5px 5px 0px;
+            background: rgba(255, 255, 255, 0.0);
             box-shadow: none;
             display: flex;
             align-items: center;
@@ -708,12 +737,14 @@ h2 + .expand_img_grid {
             transform: translateY(-50%);
             z-index: 9;
             img {
-                max-width: 20px;
+                max-width: 45px;
+                width: 45px;
+                height: 45px;
             }
             &:hover {
-                background: $secondary;
+                // background: $secondary;
                 img {
-                    @include img-white;
+                    filter: brightness(0) saturate(100%) invert(44%) sepia(80%) saturate(2415%) hue-rotate(355deg) brightness(93%) contrast(96%);
                 }
             }
         }
@@ -737,17 +768,19 @@ h2 + .expand_img_grid {
         height: 1px;
         border-radius: 0;
         margin: 0px 3px;
-        background: #4e453b;
+        background: #FFD2B9;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
     }
     .owl-carousel .owl-dots {
         text-align: center;
-        margin-top: 15px;
-        display: none;
+        margin-top: 24px;
+        // display: none;
         margin-bottom: 15px;
     }
     .owl-carousel .owl-dot.active {
-        background: #4e453b;
-        height: 3px;
+        background: #E85D0F;
     }
 }
 

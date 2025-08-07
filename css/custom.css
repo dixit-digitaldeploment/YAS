@@ -3627,6 +3627,28 @@ p.date {
   }
 }
 
+.page-template-template-service .page_title {
+  min-height: 775px;
+  background: url(../img/banner.png) no-repeat;
+  background-size: cover;
+  justify-content: end;
+}
+.page-template-template-service .page_title h1 {
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  padding-left: 40px;
+  padding-bottom: 120px;
+}
+.page-template-template-service .main_breadcrumb {
+  background: #E8EAEA;
+}
+
 .gray,
 .grey {
   background-color: #1F376A;

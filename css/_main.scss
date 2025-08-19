@@ -527,27 +527,30 @@
 }
 
 .acc__card {
-    border-radius: 5px;
-    background: #fff;
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+    // border-radius: 5px;
+    // background: #fff;
+    // box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
     margin-bottom: 12px;
 }
 
 .acc__title {
-    border-radius: 5px;
+    // border-radius: 5px;
     display: flex;
     align-items: center;
-    min-height: 55px;
+    // min-height: 55px;
     padding: 16px;
     border: 0;
     padding-right: 40px;
     cursor: pointer;
     position: relative;
+    border: 1px solid transparent;
+    background: var(--Lightest-Gray, #f6f6f7);
     h3 {
         margin: 0px;
-        color: $black;
-        font-size: 21px;
+        color: #3A3A3B;
+        font-size: 16px;
         position: relative;
+        font-weight: 500;
     }
     .acco_sign {
         position: absolute;
@@ -555,21 +558,22 @@
         top: 12px;
         img {
             width: 18px;
+            filter: brightness(0) saturate(100%) invert(20%) sepia(0%) saturate(1498%) hue-rotate(70deg) brightness(91%) contrast(86%);
         }
     }
     &.active {
-        border-bottom: 1px solid #bbbdb7;
+        // border-bottom: 1px solid #bbbdb7;
         .acco_sign img {
             transform: rotate(180deg);
         }
     }
     &:hover {
-        background: #d8790d;
+        border: 1px solid #68696a;
         h3 {
-            text-decoration: none;
+            text-decoration: underline;
         }
         .acco_sign img {
-            @include img-black;
+            // @include img-black;
         }
     }
 }
@@ -1603,23 +1607,25 @@ p.date {
         display: none;
     }
     span.current {
-        font-weight: bold;
-        color: #1e2859;
+        // font-weight: bold;
+        // color: #1e2859;
         position: relative;
+        text-decoration-line: underline !important;
         &::after {
-            content: "";
-            position: absolute;
-            bottom: 3px;
-            width: calc(100% - 4px);
-            left: 3px;
-            height: 2px;
-            background: #1e2859;
-            right: 2px;
+            // content: "";
+            // position: absolute;
+            // bottom: 3px;
+            // width: calc(100% - 4px);
+            // left: 3px;
+            // height: 2px;
+            // background: #1e2859;
+            // right: 2px;
         }
     }
     a:hover {
-        font-weight: 700;
-        color: $primary;
+        // font-weight: 700;
+        // color: $primary;
+        text-decoration: underline !important;
     }
     .nextpostslink {
         position: relative;
@@ -1650,23 +1656,26 @@ p.date {
     .next-page,
     .nextpostslink {
         font-size: 0px;
-        background-image: url(../img/angle-right-blue.svg);
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none"><path d="M1.8877 17L9.8877 9L1.8877 1" stroke="%233A3A3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
         width: 12px;
-        height: 18px;
+        height: 28px;
         margin-left: 5px;
-        background-size: 12px;
-        top: -1px;
+        background-size: 9px;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .previous-page,
     .previouspostslink {
         font-size: 0px;
-        background-image: url(../img/angle-right-blue.svg);
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="11" height="18" viewBox="0 0 11 18" fill="none"><path d="M1.8877 17L9.8877 9L1.8877 1" stroke="%233A3A3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
         width: 12px;
-        height: 18px;
+        height: 28px;
         margin-right: 5px;
-        background-size: 12px;
         transform: rotate(180deg);
-        top: 1px;
+        background-size: 9px;
+        background-repeat: no-repeat;
+        background-size: 9px;
+        background-position: center;
     }
     .pages {
         display: none;
@@ -2314,7 +2323,7 @@ p.date {
         min-height: 775px;
         background: url(../img/banner.png) no-repeat;
         background-size: cover;
-        justify-content:end;
+        justify-content: end;
         h1 {
             color: #fff;
             text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
@@ -2326,11 +2335,10 @@ p.date {
             text-transform: capitalize;
             padding-left: 40px;
             padding-bottom: 120px;
-
         }
     }
-    .main_breadcrumb{
-        background: #E8EAEA;
+    .main_breadcrumb {
+        background: #e8eaea;
     }
 }
 // service template end

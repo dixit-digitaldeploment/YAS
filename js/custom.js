@@ -295,6 +295,28 @@ $(function() {
 $(window).on('load', function() {
     $('.wp-block-image.alignleft,  .wp-block-image.alignright').wrap('<div class="left_right_wraper"></div>');
 });
+jQuery(".acc__main .acc__title").on("click keydown", function (event) {
+    if (event.type === "click" || event.key === "Enter" || event.key === " ") {
+      var dropDown = jQuery(this).closest(".acc__card").find(".acc__panel");
+      var parentAccordion = jQuery(this).closest(".acc__main");
+
+      parentAccordion.find(".acc__panel").not(dropDown).slideUp();
+      parentAccordion
+        .find(".acc__title.active")
+        .not(this)
+        .removeClass("active");
+
+      if (jQuery(this).hasClass("active")) {
+        jQuery(this).removeClass("active");
+      } else {
+        jQuery(this).addClass("active");
+      }
+
+      dropDown.stop(false, true).slideToggle();
+
+      event.preventDefault();
+    }
+  });
 
 
 

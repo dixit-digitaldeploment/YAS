@@ -25,17 +25,19 @@
     background: $secondary !important;
     color: $white !important;
     font-size: 18px !important;
-    font-weight: 700;
+    font-weight: 600;
     position: relative;
-    padding: 10px 15px;
+    padding: 14px 56px;
     text-transform: uppercase;
     border-radius: 0px !important;
-    border: 0;
+    border: 2px solid $secondary;
+    line-height: 1;
     &::after {
     }
     &:hover {
-        background: $red-hover !important;
+        background: $white !important;
         text-decoration: none !important;
+        color: #e85d0f !important;
     }
 }
 
@@ -49,7 +51,7 @@
     color: $white !important;
     font-size: 18px !important;
     font-weight: 600;
-    padding: 16px 24px;
+    padding: 14px 56px;
     display: inline-block;
     text-align: center;
     position: relative;
@@ -58,6 +60,7 @@
     border: 2px solid $secondary;
     border-radius: 0px !important;
     min-width: 245px;
+    line-height: 1;
     &::after {
     }
     &:hover {
@@ -130,6 +133,7 @@
     .sidebar {
         background: var(--Lightest-Gray, #f6f6f7);
         padding: 32px 64px;
+        height: max-content !important;
         p {
             margin: 0;
             margin-bottom: 4px;
@@ -361,7 +365,11 @@
                     background: linear-gradient(0deg, rgba(31, 55, 106, 0.25) 0%, rgba(31, 55, 106, 0.25) 100%);
                     position: absolute;
                     width: 100%;
-                    height: 100%;
+                    // height: 100%;
+                    aspect-ratio: 3/2;
+                    border-radius: 15px;
+                    top: 0;
+                    left: 0;
                 }
             }
             a {
@@ -552,7 +560,7 @@ h2 + .expand_img_grid {
             text-align: center;
             margin-bottom: 3px;
             color: $black;
-            min-height: 40px;
+            // min-height: 40px;
         }
         .job_title {
             font-size: 14px;
@@ -579,6 +587,13 @@ h2 + .expand_img_grid {
             margin-bottom: 16px;
             > a {
                 text-decoration: none;
+                &.active {
+                    .plus-minus_icon {
+                        img {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
             }
             .active {
                 .expand_box::after {
@@ -720,13 +735,14 @@ h2 + .expand_img_grid {
         margin-left: auto;
         margin-right: auto;
         border-radius: 50px;
+        height: 667px;
     }
     .owl-nav {
         button {
             // width: 46px;
             // height: 50px;
             // border-radius: 0px 5px 5px 0px;
-            background: rgba(255, 255, 255, 0.0);
+            background: rgba(255, 255, 255, 0);
             box-shadow: none;
             display: flex;
             align-items: center;
@@ -744,7 +760,8 @@ h2 + .expand_img_grid {
             &:hover {
                 // background: $secondary;
                 img {
-                    filter: brightness(0) saturate(100%) invert(44%) sepia(80%) saturate(2415%) hue-rotate(355deg) brightness(93%) contrast(96%);
+                    filter: brightness(0) saturate(100%) invert(44%) sepia(80%) saturate(2415%) hue-rotate(355deg)
+                        brightness(93%) contrast(96%);
                 }
             }
         }
@@ -768,7 +785,7 @@ h2 + .expand_img_grid {
         height: 1px;
         border-radius: 0;
         margin: 0px 3px;
-        background: #FFD2B9;
+        background: #ffd2b9;
         width: 11px;
         height: 11px;
         border-radius: 50%;
@@ -780,7 +797,7 @@ h2 + .expand_img_grid {
         margin-bottom: 15px;
     }
     .owl-carousel .owl-dot.active {
-        background: #E85D0F;
+        background: #e85d0f;
     }
 }
 
@@ -803,30 +820,34 @@ h2 + .expand_img_grid {
             margin-bottom: 0px;
         }
         .number {
-            width: 33px;
-            height: 33px;
-            background: #fcfeff;
-            border-radius: 100px;
+            width: 42px;
+            height: 42px;
+            background: $secondary;
+            border-radius: 50%;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            min-width: 33px;
-            min-height: 33px;
+            min-width: 42px;
+            min-height: 42px;
             -webkit-box-pack: center;
             -ms-flex-pack: center;
             justify-content: center;
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
-            margin-right: 20px;
-            color: $black;
-            font-weight: 700;
-            font-size: 21px;
-            border: 2px solid $black;
+            margin-right: 16px;
+            color: $white;
+            font-weight: 600;
+            font-size: 20px;
+            // border: 2px solid $black;
         }
         .how_title {
-            font-size: 21px;
-            font-weight: 700;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            strong{
+                font-weight: inherit;
+            }
         }
         p.how_title {
             margin-bottom: 5px;
@@ -861,21 +882,21 @@ h2 + .expand_img_grid {
         -ms-flex-align: center;
         align-items: center;
         font-size: 18px;
-        padding: 10px;
-        background-color: $bg-blue;
-        border-radius: 10px;
-        font-weight: 800;
+        padding: 24px 64px;
+        background-color: $secondary;
+        border-radius: 0px;
+        font-weight: 600;
         height: 100%;
         position: relative;
-        border: 0;
+        border: 2px solid transparent;
         transition: background-color 0.3s ease-in-out;
         box-shadow: none;
         @include primary-font;
         &:hover {
-            color: #000;
-            background-color: $orange;
+            color: $secondary;
+            background-color: $white;
             text-decoration: none;
-            border: 0;
+            border-color: $secondary;
         }
     }
 }
@@ -955,23 +976,26 @@ h2 + .expand_img_grid {
 }
 
 .cont_inner {
-    padding: 16px;
+    padding: 16px 24px;
     min-height: 170px;
     display: flex;
     flex-direction: column;
 }
 
 .contact_box {
-    box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+    // box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
     border: 0;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 0px;
+    background: #F6F6F7;
     p {
         margin-bottom: 5px;
     }
     h3 {
-        font-size: 21px;
+        font-size: 18px;
         margin-bottom: 15px;
+        color: #3A3A3B;
+        font-weight: 500;
     }
     h4 {
         font-weight: normal;
@@ -981,8 +1005,8 @@ h2 + .expand_img_grid {
         text-transform: capitalize;
     }
     .cont_img {
-        aspect-ratio: 288/288;
         img {
+            aspect-ratio: 288/288;
             width: 100%;
             object-fit: cover;
         }
@@ -1034,29 +1058,29 @@ h2 + .expand_img_grid {
 .wp-block-kadence-accordion {
     padding-bottom: 20px;
     .wp-block-kadence-pane {
-        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
-        background: #fff;
-        border-radius: 5px;
+        // box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+        // background: #fff;
+        // border-radius: 5px;
     }
     .kt-blocks-accordion-header {
         border: 0 !important;
-        background: none !important;
-        padding: 15px;
+        background: #f6f6f7 !important;
+        padding: 16px;
         outline: none;
+        border: 1px solid transparent;
         &:focus-visible {
-            outline: 1px solid $primary;
+            outline: 1px solid #68696a;
         }
         .kt-blocks-accordion-title {
-            font-size: 21px;
-            font-weight: 700;
-            color: $primary;
-            text-transform: uppercase;
-            font-family: "Proxima Nova Th";
+            color: #3a3a3b;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
         }
         &:hover {
+            border: 1px solid #68696a;
             .kt-blocks-accordion-title {
                 text-decoration: underline;
-                color: $secondary;
             }
             .kt-blocks-accordion-icon-trigger {
             }
@@ -1072,10 +1096,10 @@ h2 + .expand_img_grid {
         margin: 0 auto;
     }
     .kt-accordion-inner-wrap {
-        row-gap: 15px !important;
+        row-gap: 12px !important;
     }
     .kt-blocks-accordion-icon-trigger {
-        background-image: url(../img/select-arrow.svg);
+        background-image: url(../img/angle-down.svg);
         background-repeat: no-repeat;
         background-position: center;
     }
@@ -1109,6 +1133,7 @@ h2 + .expand_img_grid {
             margin-right: auto;
             border-bottom: 0;
             max-width: 900px;
+            position: sticky;
             @include md {
                 flex-wrap: wrap !important;
                 padding-left: 0px;
@@ -1117,17 +1142,16 @@ h2 + .expand_img_grid {
             }
         }
         .kt-tabs-content-wrap {
-            border-top: 1px solid #504d49;
+            // border-top: 1px solid #504d49;
         }
         .kt-title-item {
             margin-right: 4px !important;
             border: 0 !important;
             .kt-tab-title {
-                color: $black !important;
+                color: #68696a !important;
                 text-align: center;
-                font-size: 21px !important;
-                font-family: "Proxima Nova Th";
-                font-weight: bold !important;
+                font-size: 16px !important;
+                font-weight: 500 !important;
                 width: 100%;
                 height: 100%;
                 display: flex !important;
@@ -1136,17 +1160,18 @@ h2 + .expand_img_grid {
                 position: relative;
                 overflow: visible !important;
                 border: 0 !important;
-                padding: 15px 15px !important;
+                padding: 16px 24px !important;
                 border-radius: 0px !important;
-                background: #efefef !important;
+                background: #f6f6f7 !important;
                 text-transform: uppercase;
-                border-radius: 5px 5px 0px 0px !important;
                 min-width: 175px;
+                border-radius: 5px 5px 0 0 !important;
+                box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
                 &:focus {
                     outline: 0;
                 }
                 p {
-                    font-size: 21px !important;
+                    font-size: 16px !important;
                 }
                 @include md {
                 }
@@ -1160,10 +1185,12 @@ h2 + .expand_img_grid {
             }
             &.kt-tab-title-active {
                 .kt-tab-title {
-                    color: #fff !important;
-                    background: $primary !important;
+                    color: #3a3a3b !important;
+                    background: $white !important;
+                    text-decoration: underline;
+                    text-decoration-color: $secondary;
                     p {
-                        color: $black !important;
+                        color: #3a3a3b !important;
                     }
                 }
             }
@@ -1179,8 +1206,8 @@ h2 + .expand_img_grid {
         max-width: 100% !important;
         .kt-tab-inner-content {
             border: 0 !important;
-            background: none !important;
-            padding: 40px 20px !important;
+            background: $white !important;
+            padding: 32px 20px !important;
         }
         .kt-tab-inner-content-inner {
             max-width: 900px;
@@ -1264,42 +1291,42 @@ h2 + .expand_img_grid {
     thead {
         th {
             background: $primary;
-            font-family: "Proxima Nova Th";
-            font-weight: bold;
+            // font-family: "Proxima Nova Th";
+            font-weight: 500;
             font-size: 18px;
             color: #fff;
-            padding: 15px 24px !important;
+            padding: 24px !important;
             border-right: 1px solid #fff;
             p {
-                font-family: "Proxima Nova Th";
-                font-weight: bold;
+                // font-family: "Proxima Nova Th";
+                font-weight: 500;
                 font-size: 18px;
                 color: #fff;
                 margin-bottom: 0px;
             }
             &:first-child {
-                border-radius: 5px 0px 0px 0px;
+                border-radius: 0px 0px 0px 0px;
             }
             &:last-child {
-                border-radius: 0px 5px 0px 0px;
+                border-radius: 0px 0px 0px 0px;
             }
         }
     }
     tbody {
         td {
-            padding: 15px 24px !important;
+            padding: 16px !important;
             background: #efefef;
-            border-right: 1px solid #504d49;
+            border-right: 0.5px solid #fff;
             p {
                 margin: 0px;
             }
         }
         tr:last-child {
             td:first-child {
-                border-radius: 0px 0px 5px 5px;
+                border-radius: 0px 0px 0px 0px;
             }
             td:last-child {
-                border-radius: 0px 0px 5px 5px;
+                border-radius: 0px 0px 0px 0px;
             }
         }
         tr {
@@ -1402,13 +1429,15 @@ h2 + .expand_img_grid {
 //Tables
 .wp-block-table,
 .wp-block-advgb-table {
-    border: 1px solid $black;
+    // border: 1px solid $black;
     thead {
         border-bottom: none !important;
     }
     td {
-        padding: 10px 20px !important;
-        border: 1px solid #000 !important;
+        padding: 16px !important;
+        border: 0 !important;
+        border-right: 0.5px solid #fff !important;
+        font-size: 16px;
     }
     td:last-child {
         border-right: 0px !important;
@@ -1419,11 +1448,11 @@ h2 + .expand_img_grid {
         color: #fff;
         border-top: 0 !important;
         border-bottom: 0px !important;
-        padding: 15px 20px !important;
+        padding: 24px !important;
         border: 0 !important;
-        font-weight: 700;
-        font-size: 21px;
-        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: left;
         border-right: 1px solid $white !important;
     }
     th:last-child {
@@ -1431,10 +1460,10 @@ h2 + .expand_img_grid {
     }
     tbody {
         tr:nth-child(2n + 1) {
-            background: $lightgray !important;
+            background: #E8EAEA !important;
         }
         tr:nth-child(2n) {
-            background: #fff !important;
+            background: #F6F6F7 !important;
         }
     }
 }
@@ -1581,12 +1610,14 @@ h2 + .expand_img_grid {
     input[type="week"],
     select,
     textarea {
-        border: 1px solid $black;
+        border: 1px solid #C3C5C6;
         background-color: #fff;
         min-height: 40px;
-        padding: 10px;
+        padding: 16px;
         border-radius: 0px;
         width: 100%;
+        font-size: 16px;
+        font-weight: 400;
         @include md {
             font-size: 12px;
         }
@@ -1596,7 +1627,7 @@ h2 + .expand_img_grid {
         font-weight: 500 !important;
     }
     .gform_footer {
-        justify-content: center;
+        justify-content: flex-start;
         padding-top: 0px !important;
     }
     textarea.small {

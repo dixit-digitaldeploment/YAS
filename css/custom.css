@@ -1922,7 +1922,7 @@ label.title {
 }
 .acc__title h3 {
   margin: 0px;
-  color: #3A3A3B;
+  color: #3a3a3b;
   font-size: 16px;
   position: relative;
   font-weight: 500;
@@ -3618,6 +3618,16 @@ p.date {
 }
 .page-template-template-service .main_breadcrumb {
   background: #e8eaea;
+}
+
+.page-template-template-service .wp-block-group > * {
+  max-width: 1100px;
+}
+.page-template-template-service .wp-block-kadence-tabs .kt-tabs-wrap .kt-tabs-title-list {
+  max-width: 1100px;
+}
+.page-template-template-service .wp-block-kadence-tabs .kt-tabs-wrap .kt-tab-inner-content-inner {
+  max-width: 1200px;
 }
 
 .gray,

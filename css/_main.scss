@@ -547,7 +547,7 @@
     background: var(--Lightest-Gray, #f6f6f7);
     h3 {
         margin: 0px;
-        color: #3A3A3B;
+        color: #3a3a3b;
         font-size: 16px;
         position: relative;
         font-weight: 500;
@@ -558,7 +558,8 @@
         top: 12px;
         img {
             width: 18px;
-            filter: brightness(0) saturate(100%) invert(20%) sepia(0%) saturate(1498%) hue-rotate(70deg) brightness(91%) contrast(86%);
+            filter: brightness(0) saturate(100%) invert(20%) sepia(0%) saturate(1498%) hue-rotate(70deg) brightness(91%)
+                contrast(86%);
         }
     }
     &.active {
@@ -2342,3 +2343,20 @@ p.date {
     }
 }
 // service template end
+
+// page-template-template-service
+.page-template-template-service {
+    .wp-block-group > *{
+        max-width: 1100px;
+    }
+    .wp-block-kadence-tabs {
+        .kt-tabs-wrap {
+            .kt-tabs-title-list {
+                max-width: 1100px;
+            }
+            .kt-tab-inner-content-inner{
+                max-width: 1200px;
+            }
+        }
+    }
+}
